@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    /* background-color: #5d1b1b; */
+    min-height: 40vh;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('./assets/restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+nav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+nav button:active {
+    text-decoration: underline;
+}
+.navigation {
+    margin-top: 60px;
+}
+.currentPage {
+    font-weight: bold;
+    font-size: 52px;
+    margin-top: 100px;
+    font-family: 'Eagle Lake';
+}
+#content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* main page */
+.section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section1, .section2 {
+    max-width: 600px;
+    text-align: left;
+}
+h2 {
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #403d3d;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+    text-align: center;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.contact-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.contact-icon:hover {
+    color: #ddd;
+}
+
+/* Contact Form Section */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 90%;
+    padding: 20px 0 20px 0;
+    width: 80%;
+    max-width: 500px;
+    border: #bcbcbc47 solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.formElement {
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.formElement input:focus, .formElement textarea:focus {
+    border-color: #606060;
+    outline: none;
+    box-shadow: 0 0 5px rgba(180, 180, 180, 0.3);
+}
+.formElement textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+form button {
+    background-color: #e69762;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+form button:hover {
+    opacity: 0.9;
+}
+.formElement input, .formElement textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formElement label {
+    font-weight: bold;
+}
+.formElement input {
+    height: 35px;
+}
+
+/* Menu Section */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menuSection {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.sectionTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #5d1b1b;
+    border-bottom: 2px solid #9b1111;
+    padding-bottom: 5px;
+}
+.menuItem {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.menuItem:last-child {
+    border-bottom: none;
+}
+.itemName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.itemDescription {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+.itemPrice {
+    font-size: 16px;
+    color: #953333;
+    font-weight: bold;
+}
