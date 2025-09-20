@@ -6,3 +6,7 @@ Restaurant webpage dynamically rendered using webpack
 Practice DOM manipulation and package.json configuration
 
 Utilize .gitignore for node modules
+
+Push deployment files to separate branch
+
+Learn to use webpack-merge and create new scripts for dev and prod builds
