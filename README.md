@@ -10,3 +10,5 @@ Utilize .gitignore for node modules
 Push deployment files to separate branch
 
 Learn to use webpack-merge and create new scripts for dev and prod builds
+
+![Screenshot](Screenshot.png)
